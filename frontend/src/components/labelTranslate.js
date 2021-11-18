@@ -1,0 +1,42 @@
+const labelTranslate = (label) => {
+    const translateTable = {
+        id: "ردیف",
+        file: "فایل",
+        title: "عنوان",
+        type: "نوع",
+        content: "متن",
+        full_name: "نام",
+        personal_profile: "پروفایل شخصی",
+        eduction_resume: "رزومه تحصیلی",
+        work_resume: "رزومه کاری",
+        research: "تحقیقات",
+        honors: "افتخارات",
+        description: "توضیحات",
+        professor: "اساتید",
+        faculty: "دانشکده",
+        icon: "آیکون",
+        link: "لینک",
+        file_type: "نوع فایل",
+        place: "مکان",
+        employer: "کارفرما",
+        consultant: "مشاور",
+        duration: "مدت زمان",
+        ahjam: "احجام",
+        start_time: "زمان شروع",
+        media: "فایل های رسانه ای",
+        responsible_fullname: "نام مسئول",
+        responsible_image: "عکس مسئول",
+        responsible_resume_eduction: "رزومه تحصیلی مسئول",
+        responsible_resume_experience: "رزومه کاری مسئول",
+        social_network: "شبکه های اجتماعی مسئول",
+        project: "پروژه",
+        department_image: "عکس دپارتمان",
+        responsible_resume_eduction_degree: "مدرک مسئول دپارتمان",
+        responsible_resume_eduction_field: "رشته مسئول دپارتمان",
+        responsible_resume_eduction_university: "دانشگاه مسئول دپارتمان",
+        responsible_resume_eduction_date: "تاریخ فارغ التحصیلی مسئول دپارتمان",
+    }
+    if (translateTable.hasOwnProperty(label)) return translateTable[label];
+    else return "???"
+};
+export default labelTranslate;

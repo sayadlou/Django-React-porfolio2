@@ -1,0 +1,41 @@
+.customnavbar {
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+  padding: 2rem 6rem;
+}
+.customnavbar .sign-in {
+  border-radius: 10px;
+  border: solid 1px #f7f7f7;
+}
+.customnavbar .search {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+.customnavbar .search:focus {
+  outline: none;
+}
+.customnavbar a {
+  color: #5a5a5a;
+}
+
+@media only screen and (max-width: 768px) {
+  .search {
+    display: inline;
+    background-color: #00626d !important;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  .search i {
+    color: #ffffff;
+  }
+
+  .customnavbar {
+    padding: 2rem;
+  }
+}
+
+/*# sourceMappingURL=custom-navbar.module.css.map */

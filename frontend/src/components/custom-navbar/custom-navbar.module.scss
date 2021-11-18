@@ -1,0 +1,48 @@
+@mixin button {
+  background-color: transparent;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.customnavbar {
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+  padding: 2rem 6rem;
+
+  .sign-in {
+    // @include button();
+    border-radius: 10px;
+    border: solid 1px #f7f7f7;
+  }
+
+  .search {
+    color: #ffffff;
+    @include button();
+  }
+
+  a {
+    color: #5a5a5a;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search {
+    display: inline;
+    background-color: #00626d !important;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 10px;
+
+    i {
+      color: #ffffff;
+    }
+  }
+  .customnavbar {
+    padding: 2rem;
+  }
+}

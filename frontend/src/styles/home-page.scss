@@ -1,0 +1,215 @@
+@mixin box-right {
+  margin-left: 6rem;
+  margin-bottom: 8rem;
+  padding-left: 5rem;
+}
+@mixin box-left {
+  margin-right: 6rem;
+  margin-bottom: 8rem;
+  padding-right: 5rem;
+}
+@mixin vertical-scroll {
+  &::-webkit-scrollbar {
+    height: 288px;
+    width: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #d2d2d2;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #0098a0;
+  }
+}
+@mixin horizontal-scroll {
+  &::-webkit-scrollbar {
+    width: 30%;
+    height: 4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #d2d2d2;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #0098a0;
+  }
+}
+
+.home-page {
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+  .header-contianer {
+    margin-bottom: 8rem;
+    position: relative;
+    height: 760px;
+    margin-top: -13rem;
+    padding-top: 30rem;
+    // padding-right: 10rem;
+    &::after {
+      content: "";
+      width: 480px;
+      height: 760px;
+      background-color: #00626d;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -10;
+    }
+    .button {
+      font-size: 14px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.36;
+      color: #5a5a5a;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #ffd798;
+    }
+  }
+  .cooprations {
+    margin-bottom: 8rem;
+  }
+  .projects {
+    @include box-left();
+    padding-top: 2rem;
+    .paragraph {
+      max-width: 380px;
+      max-height: 108px;
+      overflow: hidden;
+    }
+    .project-carts {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      padding-bottom: 4rem;
+      margin-left: 3rem;
+      @include horizontal-scroll();
+      .button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        color: #0098a0;
+      }
+    }
+  }
+  .courses {
+    @include box-left();
+    padding-top: 2rem;
+    .paragraph {
+      max-width: 380px;
+      max-height: 108px;
+      overflow: hidden;
+    }
+    .course-carts {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      padding-bottom: 4rem;
+      margin-left: 3rem;
+      @include horizontal-scroll();
+      .button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        color: #0098a0;
+      }
+    }
+  }
+  .courses {
+    @include box-right();
+    padding: 4rem 11rem 0 4rem;
+    margin-bottom: 8rem;
+  }
+  .news {
+    @include box-left();
+    padding: 4rem 4rem 4rem 11rem;
+    background-color: #f7f7f7;
+  }
+}
+.custom-navbarr {
+  margin: 0 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-page {
+    max-width: 1366px;
+    margin-right: auto;
+    margin-left: auto;
+    .header-contianer {
+      margin-bottom: 8rem;
+      position: relative;
+      height: 760px;
+      margin-top: -13rem;
+      padding-top: 30rem;
+      // padding-right: 10rem;
+      &::after {
+        content: "";
+        width: 480px;
+        height: 760px;
+        background-color: #00626d;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .button {
+        font-size: 14px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        color: #5a5a5a;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #ffd798;
+      }
+    }
+    .cooprations {
+      margin-bottom: 8rem;
+      overflow: scroll;
+      @include horizontal-scroll();
+    }
+    .projects {
+      margin: 0;
+      padding: 3rem;
+      // padding-top: 2rem;
+      .paragraph {
+        max-width: 380px;
+        max-height: 108px;
+        overflow: hidden;
+      }
+      .project-carts {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        padding-bottom: 4rem;
+        margin-left: 3rem;
+        @include horizontal-scroll();
+        .button {
+          background-color: transparent;
+          border: none;
+          font-size: 20px;
+          color: #0098a0;
+        }
+      }
+    }
+    .courses {
+      @include box-right();
+      padding: 3rem;
+      margin: 0;
+      margin-bottom: 8rem;
+    }
+    .news {
+      padding: 3rem;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+  }
+  .custom-navbarr {
+    margin: 0;
+  }
+}

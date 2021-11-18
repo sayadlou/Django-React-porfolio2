@@ -1,0 +1,3 @@
+todo add image placeholder to all image field
+todo add verbose name for all field
+todo add verbose helper_text for all field

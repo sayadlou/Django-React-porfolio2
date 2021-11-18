@@ -1,0 +1,262 @@
+$enable-shadows: true;
+// $primary: rgb(0, 19, 223);
+
+$body-color: #5a5a5a;
+// $body-bg: #f2f2f2;
+//@font-face {
+//  font-family: IRANSans;
+//  font-style: normal;
+//  font-display: swap;
+//  font-weight: normal;
+//  src: url("../assets/fonts/eot/IRANSansWeb.eot"), url("../assets/fonts/woff2/IRANSansWeb.woff2"),
+//  url("../assets/fonts/woff/IRANSansWeb.woff"), url("../assets/fonts/ttf/IRANSansWeb.ttf");
+//}
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../assets/fonts/fonts/woff/IRANSansX-Regular.woff"), url("../assets/fonts/fonts/woff2/IRANSansX-Regular.woff2"),
+}
+
+@font-face {
+  font-family: IRANSansXBlack;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../assets/fonts/fonts/woff/IRANSansX-Black.woff"), url("../assets/fonts/fonts/woff2/IRANSansX-Black.woff2"),
+}
+
+@font-face {
+  font-family: IRANSansXUltraLight;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../assets/fonts/fonts/woff/IRANSansX-UltraLight.woff"), url("../assets/fonts/fonts/woff2/IRANSansX-UltraLight.woff2"),
+}
+
+@font-face {
+  font-family: IRANSansXBold;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../assets/fonts/fonts/woff/IRANSansX-Bold.woff"), url("../assets/fonts/fonts/woff2/IRANSansX-Bold.woff2"),
+}
+
+@font-face {
+  font-family: IRANSansXMed;
+  font-style: normal;
+  font-display: swap;
+  font-weight: normal;
+  src: url("../assets/fonts/fonts/woff/IRANSansX-Medium.woff"), url("../assets/fonts/fonts/woff2/IRANSansX-Medium.woff2"),
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: iranSansX !important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  font-stretch: normal;
+  //font-style: 400 !important;
+  line-height: 1.7 !important;
+  letter-spacing: normal;
+  text-align: right;
+  color: #5a5a5a;
+  padding: 0 !important;
+}
+
+.Wblack {
+  font-family: IRANSansXBlack !important;
+
+}
+
+.Wbold {
+  font-family: IRANSansXBold !important;
+
+}
+
+.WUlight {
+  font-family: IRANSansXUltraLight !important;
+
+}
+
+.WMed {
+  font-family: IRANSansXMed !important;
+
+}
+
+.text-black {
+  color: #000000;
+}
+
+.f10 {
+  font-size: 10px;
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f15 {
+  font-size: 15px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.f40 {
+  font-size: 40px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.sormei {
+  color: #00234F;
+}
+
+.ss02 {
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.left-arrow::before {
+  content: "\f177";
+  font: 40px/1 "FontAwesome";
+  color: #00234f;
+  width: 33px;
+}
+
+.right-arrow::before {
+  content: "\f178";
+  font: 40px/1 "FontAwesome";
+  color: #00234f;
+  width: 33px;
+}
+
+.slick-next {
+  right: 100%;
+  top: 60%;
+}
+
+.slick-list {
+  margin-left: 60px;
+  margin-right: 10px;
+}
+
+////////////////////////////////
+.header-contianer {
+  .header-left-arrow::before {
+    content: "\f177";
+    font: 40px/1 "FontAwesome";
+    color: #f8f3eb;
+    width: 33px;
+  }
+
+  .header-right-arrow::before {
+    content: "\f178";
+    font: 40px/1 "FontAwesome";
+    color: #f8f3eb;
+    width: 33px;
+  }
+
+  .slick-next {
+    right: 85%;
+    top: 105%;
+  }
+
+  .slick-prev {
+    top: 105%;
+    left: 0px;
+  }
+
+  .slick-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .header-left-arrow::before {
+      content: "\f177";
+      font: 40px/1 "FontAwesome";
+      color: #00234f;
+      width: 33px;
+    }
+    .header-right-arrow::before {
+      content: "\f178";
+      font: 40px/1 "FontAwesome";
+      color: #00234f;
+      width: 33px;
+    }
+  }
+}
+
+///////////////////
+.nav-link {
+  color: #5a5a5a !important;
+}
+
+.nav-link2 {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #5a5a5a;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-align: right;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: right;
+  margin: 1rem 0 4rem 0;
+}
+
+.navbar-dark .navbar-toggler {
+  background-color: #00626d;
+  color: #00234f !important;
+}
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "./scss/bootstrap.scss";
+// @import "./home-page.scss";
+@import "./about-us.scss";
+// @import "./contact-us.scss";

@@ -1,0 +1,93 @@
+.contact-us-container {
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.33;
+  text-align: right;
+  color: #0098a0;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: right;
+  color: #00234f;
+  margin: 1rem 0 4rem 0;
+}
+$sub-color: grey;
+$main-color: black;
+
+@mixin shrinkLabel {
+  top: -14px;
+  font-size: 12px;
+  color: $main-color;
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+
+  .form-input {
+    background: none;
+    background-color: white;
+    color: $sub-color;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 25px 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .form-input-label {
+      @include shrinkLabel();
+    }
+  }
+
+  input[type="password"] {
+    letter-spacing: 0.3em;
+  }
+
+  .form-input-label {
+    color: $sub-color;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+
+    &.shrink {
+      @include shrinkLabel();
+    }
+  }
+}
+.icon {
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  background-color: #f7f7f7;
+  color: #0098a0;
+  font-size: 15px;
+}
+.contact-info {
+  font-size: 17px;
+  line-height: 1.29;
+  text-align: right;
+  color: #5a5a5a;
+  letter-spacing: normal;
+}
+.location {
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
